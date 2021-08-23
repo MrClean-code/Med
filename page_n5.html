@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Заказ</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="src/css/normalize.css">
+	<link rel="stylesheet" href="src/css/page_5.css">
+</head>
+<body>
+
+	<div class="header">
+		<div class="wrapper">
+		    <div class="navigation">
+				<img class="logo" src="src/image/logo1.jpg" alt="Logo" usemap="#carta_img">
+					<ul class="nav">
+						<li><a href="page_n3.html">Сотрудники</a></li>
+						<li><a href="page_n4.html">Врачи и цены</a></li>
+					</ul>
+			</div>
+		</div>
+	</div>
+
+	<map name="carta_img">
+		<area shape="rect" coords="2,5,79,80" href="main.html">		
+	</map>
+
+	<div class="section">
+		<div class="wrapper">
+			<table width=70% border=0 cellpadding=4 cellspacing=0 align=center class="table1">
+				<h2><p class=caption>Оформить запись</p>  </h2>
+
+					<FORM action="mail.php"  method="POST">
+
+						<tr>
+							<Td><Label for="imyal">Имя: </label></Td>
+							<Td><Input required type="text" id="imyal" maxlength=25 class=textfield name="user_name"></Td>
+						</tr>
+
+						<tr>
+							<Td><Label for="familiyal"> Фамилия: </label></Td>
+							<Td><Input required type="text" id="familiyal" maxlength=25 class=textfield name="user_surname"></Td>
+						</tr>
+
+						
+
+						<tr>
+							<Td>Выберите врача:</Td>
+							<Td>
+								<Select  name="user_position">
+									<Option>Педиатр </option>
+									<Option>Хирург </option>
+									<Option>Лор </option>
+									<Option>Кардиолог </option>
+									<Option>Психиатр</option>
+									<Option>Ортопед</option>	
+								</Select>
+							</Td>
+						</tr>
+
+						<tr>
+							<Td>Выберите время:</Td>
+							<Td>
+								<Select name="user_time">
+									<Option>13:00 </option>
+									<Option>14:30 </option>
+									<Option>15:00 </option>
+									<Option>16:00 </option>
+									<Option>12:00 </option>
+									<Option>18:00 </option>
+								</Select>
+							</Td>
+						</tr>
+
+						<tr>
+							<Td>Дополнительная информация о клиенте:</Td>
+							<Td><Textarea class="textarea" rows=6 cols=40 name="user_information"> </textarea></Td>
+						</tr>
+
+						<tr>
+							<Td align="bottom">
+								<Input align="bottom" type="submit" value="Отправить" > <!--onclick=" ATL()"-->
+								<Input type="reset" value="Удалить" onclick="DEL()"> <!--onclick="DEL()"-->
+							</Td>
+						</tr>
+					</form>
+				</table>
+		</div>
+	</div>
+
+
+
+	<footer>
+
+			<p> 2021 </p>
+
+	</footer>
+
+	<script type="text/javascript">
+
+		function ATL(){		
+			 if (confirm('Нажмите на кнопку')) {
+			 	var newWin = window.open("для page_n5.html");	
+			 } 
+			 else {
+			 	window.open("page_n5.html");
+			 }
+		}	
+
+		function DEL(){
+			let a = true;
+			switch(a){
+
+				case true:
+				 alert('Данные удалены');
+				break;
+
+			default:
+    			alert("");
+			}
+		}	 
+	</script>
+</body>
+</html>

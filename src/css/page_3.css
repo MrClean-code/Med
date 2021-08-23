@@ -1,0 +1,169 @@
+body {
+	background-color: #eaeaea;
+	font-family: 'Montserrat', sans-serif;
+}
+.header{
+	height: 110px;
+}
+.wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+.navigation{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 36px;
+	padding-bottom: 40px;
+}
+.logo{
+	width: 80px;
+	height: 80px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.nav {
+	display: flex;
+	list-style-type: none;
+	font-weight: 700px;
+	text-transform: uppercase;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.nav>li{
+	padding-left: 20px;
+	margin-left: 20px;
+	position: relative; 
+}
+
+.nav>li::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: black;
+	left: 0px;
+}
+.nav>li:first-child{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.nav>li:first-child::before{
+	display: none;	
+}
+.nav>li>a{
+	text-decoration: none;
+	font-size:17px;
+	color: black;
+}
+.nav>li>a:hover{ 
+	cursor: pointer;
+	color: #e1df31; 
+}
+
+.table{
+	margin-top: 40px;
+	text-align: center;
+	font-weight: 500;
+}
+/*tr,td{
+	color: #32dfa2;
+}*/
+
+footer {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.container {
+  max-height: 90px;
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+}
+.section-1 {
+  background-image: url(../image/bg_page_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom:920px;
+  text-align: center;
+}
+.section-1 .container .text_header {
+  text-align: center;
+}
+.section-1 .container .content-1 {
+  position: absolute;
+}
+.section-1 .container .content-1 .name_avstria {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.section-1 .container .content-1 .avstria {
+  width: 235px;
+  height: 170px;
+}
+.section-1 .container .content-1 .wrap {
+  position: absolute;
+}
+.section-1 .container .content-2 {
+  position: absolute;
+  margin-left: 280px;
+}
+.section-1 .container .content-2 .name_germany {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.section-1 .container .content-2 .germany {
+  width: 240px;
+  height: 172px;
+}
+.section-1 .container .content-2 .wrap {
+  position: absolute;
+}
+.section-1 .container .content-3 {
+  position: absolute;
+  margin-left: 560px;
+}
+.section-1 .container .content-3 .name_singapure {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.section-1 .container .content-3 .singapure {
+  width: 240px;
+  height: 172px;
+}
+.section-1 .container .content-3 .wrap {
+  position: absolute;
+}
+.section-1 .container .content-4 {
+  position: absolute;
+  margin-left: 840px;
+}
+.section-1 .container .content-4 .name_turk {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.section-1 .container .content-4 .turk {
+  width: 240px;
+  height: 172px;
+}
+.section-1 .container .content-4 .wrap {
+  position: absolute;
+}
